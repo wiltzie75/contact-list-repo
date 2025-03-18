@@ -75,3 +75,8 @@ tr:hover {
 .selectedContact {
   color: white !important;
 }
+
+.bold-label {
+  color: rgb(125, 124, 124);
+  font-weight: bold;
+}

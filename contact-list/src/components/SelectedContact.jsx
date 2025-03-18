@@ -22,13 +22,25 @@ const SelectedContact = ({selectedContactId, setSelectedContactId}) => {
     return(
         <>
         <tr className="selectedContact">
-            <td>{selectedContactId.name}</td>
+            <td><span className="bold-label">Name:</span> {selectedContactId.name}</td>
         </tr>
         <tr className="selectedContact">
-            <td>{selectedContactId.email}</td>
+            <td><span className="bold-label">Email: </span> {selectedContactId.email}</td>
         </tr>
         <tr className="selectedContact">
-            <td>{selectedContactId.phone}</td>
+            <td><span className="bold-label">Phone: </span> {selectedContactId.phone}</td>
+        </tr>
+        <tr className="selectedContact">
+            <td><span className="bold-label">Address</span> </td>
+        </tr>
+        <tr className="selectedContact">
+            <td><span className="bold-label">Street:</span>  {selectedContactId.address.street} {selectedContactId.address.suite}</td>
+        </tr>
+        <tr className="selectedContact">
+            <td><span className="bold-label">City/Zip</span> {selectedContactId.address.city} {selectedContactId.address.zip}</td>
+        </tr>
+        <tr className="selectedContact">
+            <td><span className="bold-label">Company: </span> {selectedContactId.company.name}</td>
         </tr>
         <p></p>
         <button type="button" onClick={() => {
